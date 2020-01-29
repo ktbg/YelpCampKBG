@@ -1,11 +1,15 @@
 <%- include("./partials/header") %>
-<div class="container">
-    <h1>this is the login!</h1>
+<div class="col-sm-4"></div>
+<div class="col-sm-4 container">
+    <h1>Login</h1>
+    <hr>
 
     <form action="/login" method="POST">
         <input type="text" name="username" placeholder="username">
         <input type="password" name="password" placeholder="password">
         <button>LOGIN!</button>
     </form>
+    <a class="btn btn-link" href="/campgrounds">Back To Campgrounds</a>
 </div>
+<div class="col-sm-4"></div>
 <%- include("./partials/footer") %>

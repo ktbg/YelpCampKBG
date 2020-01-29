@@ -1,12 +1,19 @@
 <%- include("./partials/header") %>
-<div class="container">
-    <h1>This is the registration page</h1>
+<div class="col-sm-4"></div>
+<div class="col-sm-4 container">
+    <h1>Welcome!</h1>
+    <h4>Please register for full campground access</h4>
+    <hr>
 
     <form action="/register" method="POST">
         <input type="text" name="username" placeholder="username">
         <input type="password" name="password" placeholder="password">
         <button>SUBMIT!</button>
     </form>
+    <a class="btn btn-link" href="/campgrounds">Back To Campgrounds</a>
 </div>
+<div class="col-sm-4"></div>
+
+
 
 <%- include("./partials/footer") %>
