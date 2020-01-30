@@ -22,8 +22,8 @@ var commentRoutes       =   require("./routes/comments"),
 //     useNewUrlParser: true
 // });
 mongoose.connect("mongodb+srv://ktbg:DBa1177952@cluster0-zajkj.mongodb.net/test?retryWrites=true&w=majority", {
-    useUnifiedTopology:true, 
     useNewUrlParser: true,
+    useUnifiedTopology: true,
     useCreateIndex: true
 }) .then(() => {
     console.log("Connected to DB!");
