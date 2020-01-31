@@ -21,13 +21,14 @@ var commentRoutes       =   require("./routes/comments"),
 //     useUnifiedTopology:true, 
 //     useNewUrlParser: true
 // });
-mongoose.connect("mongodb+srv://ktbg:DBa1177952@cluster0-zajkj.mongodb.net/test?retryWrites=true&w=majority", {
+
+mongoose.connect("mongodb+srv://ktbg:dba1177952@cluster0-zajkj.mongodb.net/test?retryWrites=true&w=majority", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useCreateIndex: true
-}) .then(() => {
+}).then(() => {
     console.log("Connected to DB!");
-}) .catch(err =>{
+}).catch(err => {
     console.log("ERROR:", err.message);
 });
 
