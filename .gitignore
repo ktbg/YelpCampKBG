@@ -19,3 +19,4 @@ bin-release/
 
 # custom rules
 node_modules/
+.env

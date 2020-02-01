@@ -12,6 +12,8 @@ var express             =   require ('express'),
     Comment             =   require("./models/comment"),
     seedDB              =   require("./seeds");
 
+    require('dotenv').config();
+
 // REQUIRING ROUTES
 var commentRoutes       =   require("./routes/comments"),
     campgroundRoutes    =   require("./routes/campgrounds"),
@@ -22,7 +24,7 @@ var commentRoutes       =   require("./routes/comments"),
 //     useNewUrlParser: true
 // });
 
-mongoose.connect("mongodb+srv://ktbg:dba1177952@cluster0-zajkj.mongodb.net/test?retryWrites=true&w=majority", {
+mongoose.connect(process.env.MONGODB_ATLAS_URI, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useCreateIndex: true
