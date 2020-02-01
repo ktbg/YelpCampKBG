@@ -30,3 +30,7 @@
 .navbar-light {
     background-color: #d4d4d4;
 }
+
+.form-group {
+    width: 80%;
+}
