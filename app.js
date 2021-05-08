@@ -13,7 +13,7 @@ var express             =   require ('express'),
     seedDB              =   require("./seeds");
 
     require('dotenv').config();
-
+// testing to log into github
 // REQUIRING ROUTES
 var commentRoutes       =   require("./routes/comments"),
     campgroundRoutes    =   require("./routes/campgrounds"),
